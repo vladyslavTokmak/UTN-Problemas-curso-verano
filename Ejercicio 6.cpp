@@ -15,12 +15,9 @@ int main()
     do{
         cout << "Ingrese el numero " << cont << ":";
         cin>>conjunto[cont];
-        if(conjunto[cont] == 0){
-            break;
-        }
         cont++;
     }
-    while(cont < 20 || conjunto[cont] == 0);
+    while(cont < 20);
     
     cout << "Ingrese la posicion inical: ";
     cin >> posInicial;
@@ -30,5 +27,4 @@ int main()
     for(i = posInicial; i <= posFinal; i++){
     	cout << "Posicion " << i << ": " << conjunto[i] << endl;
 	}
-    
 }
